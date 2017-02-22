@@ -13,11 +13,10 @@
         document.createElement("footer");
     </script>
     <link href="css/reset.css" type="text/css" rel="stylesheet">
-    <link href="css/header.css" type="text/css" rel="stylesheet">
     <link href="css/index.css" type="text/css" rel="stylesheet">
 </head>
 <body>
-    <nav class="hci-nav">
+    <nav class="hci-nav" id="hciNav">
         <div class="hci-nav-inner">
             <div class="hci-nav-logo">
                 <img src="img/HCI%20Logo.png">
@@ -37,170 +36,222 @@
                 </li>
             </ul>
             <div class="hci-nav-date">
-                <a href="#">重要日期</a>
-                <div class="hci-date-list">
-                    <ul>
-                        <li class="hci-date-item">
-                            <div class="hci-date-calendar">
-                                <div class="day">20</div>
-                                <div class="month">2月</div>
-                            </div>
-                            <div class="hci-date-detail">
-                                <h1 class="hci-date-title">
-                                    <span class="schedule">下一次例会</span>
-                                    <span class="duration">15:00 - 17:00</span>
-                                </h1>
-                                <div class="hci-date-info">
-                                    <p>2017年2月20日 星期一</p>
-                                    <p>武汉大学信息管理学院601室</p>
+                <a href="#" id="hciDateBtn">重要日期</a>
+                <div class="hci-date-list" id="hciDateList">
+                    <div class="hic-date-inner">
+                        <ul>
+                            <li class="hci-date-item">
+                                <div class="hci-date-calendar">
+                                    <div class="day">20</div>
+                                    <div class="month">2月</div>
                                 </div>
-                            </div>
-                        </li>
-                        <li class="hci-date-item">
-                            <div class="hci-date-calendar">
-                                <div class="day">22</div>
-                                <div class="month">3月</div>
-                            </div>
-                            <div class="hci-date-detail">
-                                <h1 class="hci-date-title">
-                                    <span class="schedule">iConference</span>
-                                    <span class="duration">4天</span>
-                                </h1>
-                                <h3 class="hci-date-subtitle">iConference 2017</h3>
-                                <div class="hci-date-info">
-                                    <p>2017年3月22日 - 25日</p>
-                                    <p>中国 武汉</p>
+                                <div class="hci-date-detail">
+                                    <h1 class="hci-date-title">
+                                        <span class="schedule">下一次例会</span>
+                                        <span class="duration">15:00 - 17:00</span>
+                                    </h1>
+                                    <div class="hci-date-info">
+                                        <p>2017年2月20日 星期一</p>
+                                        <p>武汉大学信息管理学院601室</p>
+                                    </div>
                                 </div>
-                            </div>
-                        </li>
-                        <li class="hci-date-item">
-                            <div class="hci-date-calendar">
-                                <div class="day">19</div>
-                                <div class="month">6月</div>
-                            </div>
-                            <div class="hci-date-detail">
-                                <h1 class="hci-date-title">
-                                    <span class="schedule">JCDL</span>
-                                    <span class="duration">5天</span>
-                                </h1>
-                                <h3 class="hci-date-subtitle">Joint Conference on Digital Libraries</h3>
-                                <div class="hci-date-info">
-                                    <p>2017年6月19日 - 23日</p>
-                                    <p>加拿大 多伦多</p>
+                            </li>
+                            <li class="hci-date-item">
+                                <div class="hci-date-calendar">
+                                    <div class="day">22</div>
+                                    <div class="month">3月</div>
                                 </div>
-                            </div>
-                        </li>
-                    </ul>
-                    <a class="hci-date-more">更多日程</a>
+                                <div class="hci-date-detail">
+                                    <h1 class="hci-date-title">
+                                        <span class="schedule">iConference</span>
+                                        <span class="duration">4天</span>
+                                    </h1>
+                                    <h3 class="hci-date-subtitle">iConference 2017</h3>
+                                    <div class="hci-date-info">
+                                        <p>2017年3月22日 - 25日</p>
+                                        <p>中国 武汉</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="hci-date-item">
+                                <div class="hci-date-calendar">
+                                    <div class="day">19</div>
+                                    <div class="month">6月</div>
+                                </div>
+                                <div class="hci-date-detail">
+                                    <h1 class="hci-date-title">
+                                        <span class="schedule">JCDL</span>
+                                        <span class="duration">5天</span>
+                                    </h1>
+                                    <h3 class="hci-date-subtitle">Joint Conference on Digital Libraries</h3>
+                                    <div class="hci-date-info">
+                                        <p>2017年6月19日 - 23日</p>
+                                        <p>加拿大 多伦多</p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <a href="#" class="hci-date-more">更多日程</a>
+                    </div>
                 </div>
             </div>
-            <div class="hci-nav-search">
+            <div class="hci-nav-search" id="hciSearch">
                 <form>
                     <input type="text" name="query" placeholder="请输入搜索内容">
-                    <button type="submit" title="搜索">搜索</button>
+                    <button type="button" title="搜索" id="hciSearchBtn">搜索</button>
                 </form>
             </div>
         </div>
     </nav>
     <section class="hci-banner">
-        <div class="hci-banner-inner">
-            <ul class="hci-banner-list">
-                <li class="hci-banner-item">
-                    <img src="img/banner1.jpg">
-                </li>
-            </ul>
-        </div>
+        <ul class="hci-banner-list">
+            <li class="hci-banner-item">
+                <img src="img/banner1.jpg">
+            </li>
+            <li class="hci-banner-item">
+                <img src="img/banner2.JPG">
+            </li>
+            <li class="hci-banner-item">
+                <img src="img/banner3.JPG">
+            </li>
+        </ul>
         <a class="prev" href="#">上一张</a>
         <a class="next" href="#">下一张</a>
     </section>
     <section class="hci-part hci-aboutus">
-        <h1>关于我们</h1>
+        <h1>武汉大学人机交互创新团队</h1>
         <p class="hci-aboutus-intro">
             武汉大学人机交互创新团队（Human Computer Interaction Innovation Team Wuhan University）这一段是介绍文字，主要阐述“团队是做什么的”，注意包含中英文总共不要超过120个字。具体优势、愿景不在这里写，在单独页面“团队介绍”中详细介绍，另外首页下方的“团队成员”板块也有优势/愿景段落。
         </p>
         <a href="#" class="hci-aboutus-more">了解更多</a>
     </section>
-    <section class="hci-part hci-member">
-        <h1>核心成员</h1>
+    <section class="hci-part hci-keypoint">
+        <ul class="hci-keypoint-list">
+            <li class="hci-keypoint-item">
+                <div class="hci-keypoint-inner">
+                    <i></i>
+                    <h2>要点1</h2>
+                    <p>这个部分的卡片水平分为面积相等的3个部分，共同展现团队最重要的3个要点。这些要点可以是：「3个最主要的研究方向」，或者「3个最主要的优势」。每段字数为75到85之间。</p>
+                </div>
+            </li>
+            <li class="hci-keypoint-item">
+                <div class="hci-keypoint-inner">
+                    <i></i>
+                    <h2>要点2</h2>
+                    <p>请注意，要点标题的字数必须一致，尽量短，以不超过8个字为宜。等你们确定三个要点的内容之后告诉我，我给你制作更合适的icon。现在上方的这3个是随便放的，不适合网站主题。</p>
+                </div>
+            </li>
+            <li class="hci-keypoint-item">
+                <div class="hci-keypoint-inner">
+                    <i></i>
+                    <h2>要点3</h2>
+                    <p>三个描述段落必须上方水平对齐。这些要点可以是：「3个最主要的研究方向」，或者「3个最主要的优势」。每段字数为75到85之间。段落长度尽量保持一致。</p>
+                </div>
+            </li>
+        </ul>
+    </section>
+
+    <section class="hci-member">
+        <h1 class="hci-title">师资力量</h1>
         <ul class="hci-member-list">
             <li class="hci-member-item">
-                <a class="hci-mem-avatar" href="#">
+                <a href="#" class="hci-card">
                     <img src="img/wd.jpg">
+                    <h2 class="hci-member-name">吴丹 教授</h2>
+                    <p class="hci-member-ins">武汉大学信息管理学院</p>
                 </a>
-                <a class="hci-mem-name" href="#">吴丹 教授</a>
-                <p class="hci-mem-ins">武汉大学信息管理学院</p>
             </li>
             <li class="hci-member-item">
-                <a class="hci-mem-avatar" href="#">
+                <a href="#" class="hci-card">
                     <img src="img/hdq.png">
+                    <h2 class="hci-member-name">何大庆 教授</h2>
+                    <p class="hci-member-ins">匹兹堡大学信息科学学院</p>
                 </a>
-                <a class="hci-mem-name" href="#">何大庆 副教授</a>
-                <p class="hci-mem-ins">匹兹堡大学信息科学学院</p>
             </li>
             <li class="hci-member-item">
-                <a class="hci-mem-avatar" href="#">
+                <a href="#" class="hci-card">
                     <img src="img/al.jpg">
+                    <h2 class="hci-member-name">安璐 副教授</h2>
+                    <p class="hci-member-ins">武汉大学信息管理学院</p>
                 </a>
-                <a class="hci-mem-name" href="#">安璐 副教授</a>
-                <p class="hci-mem-ins">武汉大学信息管理学院</p>
             </li>
             <li class="hci-member-item">
-                <a class="hci-mem-avatar" href="#">
-                    <img src="img/zy.png">
-                </a>
-                <a class="hci-mem-name" href="#">赵杨 副教授</a>
-                <p class="hci-mem-ins">武汉大学信息管理学院</p>
-            </li>
-            <li class="hci-member-item">
-                <a class="hci-mem-avatar" href="#">
+                <a href="#" class="hci-card">
                     <img src="img/hl.png">
+                    <h2 class="hci-member-name">洪亮 副教授</h2>
+                    <p class="hci-member-ins">武汉大学信息管理学院</p>
                 </a>
-                <a class="hci-mem-name" href="#">洪亮 副教授</a>
-                <p class="hci-mem-ins">武汉大学信息管理学院</p>
+            </li>
+            <li class="hci-member-item">
+                <a href="#" class="hci-card">
+                    <img src="img/wd.jpg">
+                    <h2 class="hci-member-name">吴丹 教授</h2>
+                    <p class="hci-member-ins">武汉大学信息管理学院</p>
+                </a>
+            </li>
+            <li class="hci-member-item">
+                <a href="#" class="hci-card">
+                    <img src="img/hdq.png">
+                    <h2 class="hci-member-name">何大庆 教授</h2>
+                    <p class="hci-member-ins">匹兹堡大学信息科学学院</p>
+                </a>
+            </li>
+            <li class="hci-member-item">
+                <a href="#" class="hci-card">
+                    <img src="img/al.jpg">
+                    <h2 class="hci-member-name">安璐 副教授</h2>
+                    <p class="hci-member-ins">武汉大学信息管理学院</p>
+                </a>
+            </li>
+            <li class="hci-member-item">
+                <a href="#" class="hci-card">
+                    <img src="img/hl.png">
+                    <h2 class="hci-member-name">洪亮 副教授</h2>
+                    <p class="hci-member-ins">武汉大学信息管理学院</p>
+                </a>
             </li>
         </ul>
-        <div class="hci-team">
-            <h2>一句话描述团队优势/愿景</h2>
-            <div class="hci-team-intro">
-                这里写关于团队优势/愿景的整体介绍，注意总字数在170到220之间。这里写关于团队优势/愿景的整体介绍，注意总字数在170到220之间。这里写关于团队优势/愿景的整体介绍，注意总字数在170到220之间。这里写关于团队优势/愿景的整体介绍，注意总字数在170到220之间。这里写关于团队优势/愿景的整体介绍，注意总字数在170到220之间。这里写关于团队优势/愿景的整体介绍，注意总字数在170到220之间。这里写关于团队优势/愿景的整体介绍，注意总字数在170到220之间。
-            </div>
-        </div>
-        <div class="hci-ribbon"></div>
     </section>
+
     <section class="hci-project">
+        <h1 class="hci-title">科研项目</h1>
         <ul class="hci-pro-list">
             <li class="hci-pro-item">
-                <div class="hci-pro-pic">
-                    <img src="img/pro1.jpg">
-                </div>
-                <div class="hci-pro-content">
-                    <a href="#" class="hci-pro-name">成功项目名称</a>
-                    <p class="hci-pro-intro">这里是项目成果描述注意不要超过80个字这里是项目成果描述注意不要超过80个字这里是项目成果描述注意不要超过80个字这里是项目成果描述注意不要超过80个字这里是项目成果。</p>
-                </div>
-                <a href="#" class="hci-pro-more">查看详情</a>
+                <a href="#" class="hci-card">
+                    <div class="hci-pro-pic">
+                        <img src="img/pro1.jpg">
+                    </div>
+                    <div class="hci-pro-content">
+                        <h2 class="hci-pro-name">成功项目名称</h2>
+                        <p class="hci-pro-intro">这里是项目成果描述注意不要超过80个字这里是项目成果描述注意不要超过80个字这里是项目成果描述注意不要超过80个字这里是项目成果描述注意不要超过80个字这里是项目成果。</p>
+                    </div>
+                </a>
             </li>
             <li class="hci-pro-item">
-                <div class="hci-pro-pic">
-                    <img src="img/pro2.jpg">
-                </div>
-                <div class="hci-pro-content">
-                    <a href="#" class="hci-pro-name">成功项目名称</a>
-                    <p class="hci-pro-intro">这里是项目成果描述注意不要超过80个字这里是项目成果描述注意不要超过80个字这里是项目成果描述注意不要超过80个字这里是项目成果描述注意不要超过80个字这里是项目成果。</p>
-                </div>
-                <a href="#" class="hci-pro-more">查看详情</a>
+                <a href="#" class="hci-card">
+                    <div class="hci-pro-pic">
+                        <img src="img/pro2.jpg">
+                    </div>
+                    <div class="hci-pro-content">
+                        <h2 class="hci-pro-name">成功项目名称</h2>
+                        <p class="hci-pro-intro">这里是项目成果描述注意不要超过80个字这里是项目成果描述注意不要超过80个字这里是项目成果描述注意不要超过80个字这里是项目成果描述注意不要超过80个字这里是项目成果。</p>
+                    </div>
+                </a>
             </li>
             <li class="hci-pro-item">
-                <div class="hci-pro-pic">
-                    <img src="img/pro3.jpg">
-                </div>
-                <div class="hci-pro-content">
-                    <a href="#" class="hci-pro-name">成功项目名称</a>
-                    <p class="hci-pro-intro">这里是项目成果描述注意不要超过80个字这里是项目成果描述注意不要超过80个字这里是项目成果描述注意不要超过80个字这里是项目成果描述注意不要超过80个字这里是项目成果。</p>
-                </div>
-                <a href="#" class="hci-pro-more">查看详情</a>
+                <a href="#" class="hci-card">
+                    <div class="hci-pro-pic">
+                        <img src="img/pro3.jpg">
+                    </div>
+                    <div class="hci-pro-content">
+                        <h2 class="hci-pro-name">成功项目名称</h2>
+                        <p class="hci-pro-intro">这里是项目成果描述注意不要超过80个字这里是项目成果描述注意不要超过80个字这里是项目成果描述注意不要超过80个字这里是项目成果描述注意不要超过80个字这里是项目成果。</p>
+                    </div>
+                </a>
             </li>
         </ul>
     </section>
+    <a href="#" class="hci-more">点击这里查看「科研项目」的更多内容</a>
     <footer>
         <div class="hci-footer-inner">
             <div class="hci-footer-area hci-footer-info">
@@ -272,5 +323,6 @@
         </div>
     </footer>
     <section class="mask"></section>
+    <script src="js/lib/require.js" data-main="js/index.js"></script>
 </body>
 </html>
