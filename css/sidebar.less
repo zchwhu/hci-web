@@ -1,0 +1,54 @@
+@import "variables";
+
+.hci-sidebar {
+  position: absolute;
+  top: 171px;
+  width: @sidebarWidth;
+  z-index: 10;
+  background-color: #fff;
+  box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.10);
+}
+
+.hci-sidebar-header {
+  padding: 0 44px 0 45.8px;
+  p{
+    margin-top: 3px;
+    line-height: 17px;
+    text-align: center;
+    font-size: 12px;
+    color: #3F3F3F;
+  }
+}
+
+.hci-sidebar-title {
+  padding: 4.5px 0;
+  line-height: 33px;
+  border-top: 1px solid #3F3F3F;
+  border-bottom: 1px solid #3F3F3F;
+  text-align: center;
+  font-size: 24px;
+  font-weight: bolder;
+  color: #3F3F3F;
+  text-indent: 11px;
+  letter-spacing: 16.5px;
+}
+
+.hci-sidebar-menu{
+  margin: 16.5px 24px 0;
+  padding-top: 38.5px;
+  padding-left: 30px;
+  border-top: 1px solid #eee;
+}
+
+.hci-sidebar-item{
+  margin-bottom: 36px;
+  color: #555;
+  a{
+    line-height: 30px;
+    font-size: 22px;
+    color: inherit;
+  }
+  &.active,&:hover{
+    color: #009896;
+  }
+}
