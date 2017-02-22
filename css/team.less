@@ -1,0 +1,174 @@
+@import "variables";
+@import "header";
+@import "footer";
+@import "sidebar";
+
+.hci-body {
+  position: relative;
+  top: -43px;
+  width: @mainWidth;
+  margin: 0 auto;
+  padding-left: @sidebarWidth;
+  box-sizing: border-box;
+}
+
+.hci-main {
+  margin-left: 30px;
+  background-color: #fff;
+}
+
+.hci-content{
+  margin-bottom: 30px;
+  box-shadow: 0 0 9px 0 rgba(0,0,0,0.10);
+}
+
+.hci-content-basic{
+  padding: 28px 97px 67px;
+}
+
+.hci-content-header{
+  margin: 0 97px 0 96px;
+  padding: 36px 0 15px;
+}
+
+.hci-teacher{
+  .hci-content-header{
+    border-bottom: 1px solid #DFDFDF;
+  }
+}
+
+.hci-content-title{
+  line-height: 45px;
+  margin-bottom: 15px;
+  font-size: 32px;
+  color: #010101;
+  letter-spacing: 0.01px;
+}
+
+.hci-content-desc{
+  margin-bottom: 20px;
+  line-height: 33px;
+  font-size: 24px;
+  color: #000;
+}
+
+.hci-content-item,.hci-content-detail{
+  margin-bottom: 15px;
+  line-height: 26px;
+  font-size: 14px;
+  color: #535353;
+}
+
+.hci-content-detail{
+  white-space: pre-line;
+}
+
+
+.hci-teacher-detail{
+  padding: 34px 49px 62px;
+  font-size: 0;
+  h2{
+    margin-bottom: 32px;
+    text-align: center;
+    font-size: 24px;
+  }
+}
+
+.hci-teacher-list{
+  width: 750px;
+  &.hci-teacher-list{
+    margin-top: 70px;
+  }
+}
+
+.hci-teacher-item{
+  display: inline-block;
+  *display: inline;
+  width: 165px;
+  text-align: center;
+  &+.hci-teacher-item{
+    margin-left: 30px;
+  }
+  img{
+    display: block;
+    width: 165px;
+    height: 165px;
+    border-radius: 50%;
+  }
+}
+
+.hci-teacher-name{
+  margin-top: 13px;
+  line-height: 22px;
+  font-size: 16px;
+  font-weight: bolder;
+}
+
+.hci-teacher-ins{
+  margin-bottom: 14px;
+  line-height: 20px;
+  font-size: 14px;
+  color: #949494;
+}
+
+.hci-teacher-more{
+  display: block;
+  width: 99px;
+  margin: 0 auto;
+  line-height: 24px;
+  font-size: 14px;
+  color: #fff;
+  background-color: #0CE4E1;
+  border-radius: 100px;
+}
+
+.hci-student-detail{
+  padding: 0 72px 90px 122px;
+}
+
+.hci-student-list{
+  position: relative;
+  font-size: 0;
+}
+
+.hci-student-list::after{
+  display: block;
+  position: absolute;
+  width: 1px;
+  height: 100%;
+  content: '';
+  left: 50%;
+  top: 0;
+  background-color: #DFDFDF;
+}
+
+.hci-student-item{
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  width: 50%;
+  box-sizing: border-box;
+  margin-bottom: 24px;
+  &:last-child,&:nth-last-child(2){
+    margin-bottom: 0;
+  }
+}
+
+.hci-student-item:nth-child(even){
+  padding-left: 77px;
+}
+
+.hci-student-name{
+  display: inline-block;
+  width: 93px;
+  line-height: 22px;
+  font-size: 16px;
+  font-weight: bolder;
+  color: #000;
+}
+
+.hci-student-degree{
+  line-height: 20px;
+  font-size: 14px;
+  color: #949494;
+}
