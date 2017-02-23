@@ -23,6 +23,11 @@ define(function () {
         }
     };
 
+    /**
+     * 为元素增加类名
+     * @param ele dom元素
+     * @param className 类名
+     */
     var addClass = function (ele, className) {
         if (hasClass(ele, className)) {
             return;
@@ -34,6 +39,11 @@ define(function () {
         }
     };
 
+    /**
+     * 为元素移除类名
+     * @param ele dom元素
+     * @param className 类名
+     */
     var removeClass = function (ele, className) {
         if (!hasClass(ele, className)) {
             return;
@@ -60,6 +70,10 @@ define(function () {
         }
     };
 
+    /**
+     * 获得元素滚动条高度
+     * @returns {number}
+     */
     var getScrollTop = function()
     {
         var scrollTop=0;
@@ -74,6 +88,12 @@ define(function () {
         return scrollTop;
     };
 
+    /**
+     * 获得元素索引值
+     * @param self 元素自身
+     * @param obj 元素所在数组
+     * @returns {number}
+     */
     var index = function(self,obj){
         for(var i=0;i < obj.length;i++){
             if(obj[i]==self){
