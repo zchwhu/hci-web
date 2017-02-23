@@ -36,7 +36,7 @@
                 </li>
             </ul>
             <div class="hci-nav-date">
-                <a href="#" id="hciDateBtn">重要日期</a>
+                <a id="hciDateBtn">重要日期</a>
                 <div class="hci-date-list" id="hciDateList">
                     <div class="hic-date-inner">
                         <ul>
@@ -103,8 +103,8 @@
             </div>
         </div>
     </nav>
-    <section class="hci-banner">
-        <ul class="hci-banner-list">
+    <section class="hci-banner" id="hciCarousel">
+        <ul class="hci-banner-list" id="hciCarouselInner">
             <li class="hci-banner-item">
                 <img src="img/banner1.jpg">
             </li>
@@ -115,13 +115,18 @@
                 <img src="img/banner3.JPG">
             </li>
         </ul>
-        <a class="prev" href="#">上一张</a>
-        <a class="next" href="#">下一张</a>
+        <a class="prev" href="#" id="prev">上一张</a>
+        <a class="next" href="#" id="next">下一张</a>
+        <ol class="indicators" id="hciIndicators">
+            <li class="indicator-item active"></li>
+            <li class="indicator-item"></li>
+            <li class="indicator-item"></li>
+        </ol>
     </section>
     <section class="hci-part hci-aboutus">
         <h1>武汉大学人机交互创新团队</h1>
         <p class="hci-aboutus-intro">
-            武汉大学人机交互创新团队（Human Computer Interaction Innovation Team Wuhan University）这一段是介绍文字，主要阐述“团队是做什么的”，注意包含中英文总共不要超过120个字。具体优势、愿景不在这里写，在单独页面“团队介绍”中详细介绍，另外首页下方的“团队成员”板块也有优势/愿景段落。
+            武汉大学人机交互创新团队以“面向‘互联网+’的人机关系建模与支撑技术研究”为主题，深入开展“互联网+”环境下的人机关系研究、多设备融合的人机交互与协作研究、以用户为中心的交互技术研究，进而探讨人机交互技术在“互联网+智能服务”中的应用前景。
         </p>
         <a href="#" class="hci-aboutus-more">了解更多</a>
     </section>
@@ -130,22 +135,22 @@
             <li class="hci-keypoint-item">
                 <div class="hci-keypoint-inner">
                     <i></i>
-                    <h2>要点1</h2>
-                    <p>这个部分的卡片水平分为面积相等的3个部分，共同展现团队最重要的3个要点。这些要点可以是：「3个最主要的研究方向」，或者「3个最主要的优势」。每段字数为75到85之间。</p>
+                    <h2>科研实力强</h2>
+                    <p>本团队成员具备丰富的跨学科背景，结合了图书情报学、计算机科学、工程技术学科背景，还具有从事信息检索和用户行为相关领域的研究经验，具备较强的数据分析和技术研发水平。</p>
                 </div>
             </li>
             <li class="hci-keypoint-item">
                 <div class="hci-keypoint-inner">
                     <i></i>
-                    <h2>要点2</h2>
-                    <p>请注意，要点标题的字数必须一致，尽量短，以不超过8个字为宜。等你们确定三个要点的内容之后告诉我，我给你制作更合适的icon。现在上方的这3个是随便放的，不适合网站主题。</p>
+                    <h2>国际化视野</h2>
+                    <p>本团队成员均有在海外留学访问的背景，还经常性参与知名的信息检索领域的国际学术会议，也应邀参加全球顶级信息学院联盟iSchools年会iConference，担任国际期刊的编委、审稿专家。</p>
                 </div>
             </li>
             <li class="hci-keypoint-item">
                 <div class="hci-keypoint-inner">
                     <i></i>
-                    <h2>要点3</h2>
-                    <p>三个描述段落必须上方水平对齐。这些要点可以是：「3个最主要的研究方向」，或者「3个最主要的优势」。每段字数为75到85之间。段落长度尽量保持一致。</p>
+                    <h2>国际影响力</h2>
+                    <p>本团队成员参与主持了多项国家自科和社科基金项目，出版了多部著作，发表了一系列相关学术论文，力争成为国内图书情报机构在人机关系领域具有一定国际影响力的学术团队。</p>
                 </div>
             </li>
         </ul>
