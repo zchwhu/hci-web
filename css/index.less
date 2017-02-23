@@ -3,11 +3,6 @@
 @import "variables";
 @import "mixin";
 
-@fontStack: PingFangSC-Light, "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
-@bgColor: #fff;
-@mainColor: #E44856;
-@fontColor: #666;
-
 body,html{
   font-family: @fontStack;
   background-color: @bgColor;
@@ -64,6 +59,28 @@ body,html{
 .next{
   right: 133px;
   background-image: url("../img/Arrow Right.png");
+}
+
+.indicators{
+  position: absolute;
+  left: 50%;
+  bottom: 18px;
+  width: 60%;
+  margin-left: -30%;
+  text-align: center;
+}
+
+.indicator-item{
+  .displayInlineBlock();
+  width: 12px;
+  height: 12px;
+  margin: 1px;
+  opacity: 0.85;
+  border: 1px solid #FFFFFF;
+  .borderRadius(50%);
+  &.active{
+    background-color: #fff;
+  }
 }
 
 .hci-part{

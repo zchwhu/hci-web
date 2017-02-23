@@ -1,12 +1,14 @@
 @import "variables";
+@import "mixin";
 
 .hci-sidebar {
   position: absolute;
   top: 171px;
   width: @sidebarWidth;
-  z-index: 10;
   background-color: #fff;
-  box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.10);
+  .boxShadow(0 0 9px 0 rgba(0, 0, 0, 0.10),1px solid #ddd);
+  opacity: 0;
+  .transition(opacity 0.4s);
 }
 
 .hci-sidebar-header {
@@ -29,8 +31,10 @@
   font-size: 24px;
   font-weight: bolder;
   color: #3F3F3F;
-  text-indent: 11px;
-  letter-spacing: 16.5px;
+  span{
+    font-weight: bolder;
+    letter-spacing: 16.5px;
+  }
 }
 
 .hci-sidebar-menu{

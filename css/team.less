@@ -19,7 +19,7 @@
 
 .hci-content{
   margin-bottom: 30px;
-  box-shadow: 0 0 9px 0 rgba(0,0,0,0.10);
+  .boxShadow(0 0 9px 0 rgba(0,0,0,0.10),1px solid #ddd);
 }
 
 .hci-content-basic{
@@ -82,8 +82,7 @@
 }
 
 .hci-teacher-item{
-  display: inline-block;
-  *display: inline;
+  .displayInlineBlock();
   width: 165px;
   text-align: center;
   &+.hci-teacher-item{

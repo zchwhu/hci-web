@@ -1,1 +1,60 @@
-.hci-sidebar{position:absolute;top:171px;width:263px;z-index:10;background-color:#fff;box-shadow:0 0 9px 0 rgba(0,0,0,0.1)}.hci-sidebar-header{padding:0 44px 0 45.8px}.hci-sidebar-header p{margin-top:3px;line-height:17px;text-align:center;font-size:12px;color:#3f3f3f}.hci-sidebar-title{padding:4.5px 0;line-height:33px;border-top:1px solid #3f3f3f;border-bottom:1px solid #3f3f3f;text-align:center;font-size:24px;font-weight:bolder;color:#3f3f3f;text-indent:11px;letter-spacing:16.5px}.hci-sidebar-menu{margin:16.5px 24px 0;padding-top:38.5px;padding-left:30px;border-top:1px solid #eee}.hci-sidebar-item{margin-bottom:36px;color:#555}.hci-sidebar-item a{line-height:30px;font-size:22px;color:inherit}.hci-sidebar-item.active,.hci-sidebar-item:hover{color:#009896}
+.hci-sidebar {
+  position: absolute;
+  top: 171px;
+  width: 263px;
+  background-color: #fff;
+  -webkit-box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.1);
+  *border: 1px solid #dddddd;
+  border: 1px solid #dddddd \9;
+  opacity: 0;
+  -webkit-transition: opacity 0.4s;
+  -moz-transition: opacity 0.4s;
+  -ms-transition: opacity 0.4s;
+  -o-transition: opacity 0.4s;
+  transition: opacity 0.4s;
+}
+.hci-sidebar-header {
+  padding: 0 44px 0 45.8px;
+}
+.hci-sidebar-header p {
+  margin-top: 3px;
+  line-height: 17px;
+  text-align: center;
+  font-size: 12px;
+  color: #3F3F3F;
+}
+.hci-sidebar-title {
+  padding: 4.5px 0;
+  line-height: 33px;
+  border-top: 1px solid #3F3F3F;
+  border-bottom: 1px solid #3F3F3F;
+  text-align: center;
+  font-size: 24px;
+  font-weight: bolder;
+  color: #3F3F3F;
+}
+.hci-sidebar-title span {
+  font-weight: bolder;
+  letter-spacing: 16.5px;
+}
+.hci-sidebar-menu {
+  margin: 16.5px 24px 0;
+  padding-top: 38.5px;
+  padding-left: 30px;
+  border-top: 1px solid #eee;
+}
+.hci-sidebar-item {
+  margin-bottom: 36px;
+  color: #555;
+}
+.hci-sidebar-item a {
+  line-height: 30px;
+  font-size: 22px;
+  color: inherit;
+}
+.hci-sidebar-item.active,
+.hci-sidebar-item:hover {
+  color: #009896;
+}
