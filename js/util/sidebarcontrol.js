@@ -57,9 +57,12 @@ require(['js/util/common.js', 'js/util/animation.js'], function (common, animati
         common.addEvent(menu[i], "click", function () {
             var index = common.index(this, menu);
             var height = heightList[index];
-
+            console.log(document.documentElement.scrollTop);
+            console.log(window.pageXOffset);
+            console.log(document.body.scrollTop);
             var step = function () {
                 var top =  document.documentElement.scrollTop || window.pageYOffset || document.body.scrollTop;
+                console.log(top);
                 if(Math.abs(top-height)>10){
                     console.log("Ok");
                     if(top>height){
