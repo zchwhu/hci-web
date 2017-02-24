@@ -89,7 +89,7 @@
   top: @navHeight;
   right: 0;
   width: 360px;
-  z-index: 100;
+  z-index: 1000;
   height: 0;
   overflow: hidden;
   .transition(height 0.6s);
@@ -111,7 +111,7 @@
   margin-right: 23px;
   text-align: center;
   color: #fff;
-  background: url("../img/Calendar Ribbon.png") no-repeat center;
+  .bgImage("../img/Calendar Ribbon");
   .day{
     line-height: 46px;
     font-size: 43px;
@@ -180,6 +180,7 @@
   border-radius: 25px;
   .transition(box-shadow .3s);
   input{
+    height: 22px;//for ie
     line-height: 22px;
     font-size: 16px;
     color: #A3A3A3;
@@ -194,7 +195,8 @@
     width: 19px;
     height: 19px;
     border: none;
-    background: transparent url("../img/Search icon.png") no-repeat center;
+    background-color: transparent;
+    .bgImage("../img/Search icon");
     text-indent: -9999px;
     cursor: pointer;
   }
@@ -217,7 +219,6 @@
 }
 
 .mask{
-  //visibility: hidden;
   position: fixed;
   width: 100%;
   top: @navHeight;

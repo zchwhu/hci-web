@@ -3,6 +3,11 @@
 @import "footer";
 @import "sidebar";
 
+body,html{
+  font-family: @fontStack;
+  background-color: @bgColor;
+}
+
 .hci-body {
   position: relative;
   top: -43px;
@@ -278,7 +283,7 @@
   font-size: 16px;
   letter-spacing: 0.22px;
   text-indent: 13px;
-  background: url("../img/Band.png") no-repeat center;
+  .bgImage("../img/Band");
 }
 
 .hci-team-calendar{
@@ -288,7 +293,7 @@
   width: 135px;
   height: 131.5px;
   text-align: center;
-  background: url("../img/Calendar Ribbon.png") no-repeat center;
+  .bgImage("../img/Calendar Ribbon");
   background-size: 100% 100%;
   .day{
     line-height: 76px;

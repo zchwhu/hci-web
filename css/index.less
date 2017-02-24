@@ -53,12 +53,12 @@ body,html{
 
 .prev{
   left: 133px;
-  background-image: url("../img/Arrow Left.png");
+  .bgImage("../img/Arrow Left");
 }
 
 .next{
   right: 133px;
-  background-image: url("../img/Arrow Right.png");
+  .bgImage("../img/Arrow Right");
 }
 
 .indicators{
@@ -78,6 +78,7 @@ body,html{
   opacity: 0.85;
   border: 1px solid #FFFFFF;
   .borderRadius(50%);
+  cursor: pointer;
   &.active{
     background-color: #fff;
   }
@@ -249,20 +250,6 @@ body,html{
 .hci-pro-intro{
   font-size: 14px;
   color: @fontColor;
-}
-
-.hci-pro-more{
-  display: block;
-  position: absolute;
-  top: 25px;
-  left: 0;
-  width: 140px;
-  padding-left: 13px;
-  box-sizing: border-box;
-  line-height: 30px;
-  background: url("../img/Band.png") no-repeat center;
-  font-size: 16px;
-  color: #fff;
 }
 
 .hci-title{

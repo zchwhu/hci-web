@@ -61,3 +61,8 @@ li {
 input{
     outline: none;
 }
+
+/*For chrome*/
+button:focus{
+    outline: none;
+}
