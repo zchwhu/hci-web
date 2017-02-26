@@ -1,5 +1,6 @@
 @import "variables";
 @import "mixin";
+@import "icon";
 
 .hci-nav{
   position: fixed;
@@ -194,16 +195,23 @@
     bottom: 12px;
     width: 19px;
     height: 19px;
+    padding: 0;
     border: none;
     background-color: transparent;
-    .bgImage("../img/Search icon");
-    text-indent: -9999px;
     cursor: pointer;
+  }
+  .icon-search{
+    font-size: 18px;
+    color: #5E5E5E;
+    .transition(color 0.3s);
   }
   &.focus{
     .boxShadow(0 0 5px 0 rgba(227,71,85,0.50),1px solid @mainColor);
     input{
       opacity: 1;
+    }
+    .icon-search{
+      color: @mainColor;
     }
   }
 }

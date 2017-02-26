@@ -23,6 +23,7 @@ body,html{
 }
 
 .hci-content{
+  position: relative;
   margin-bottom: 30px;
   padding: 28px 97px 67px;
   .boxShadow(0 0 9px 0 rgba(0,0,0,0.10),1px solid #ddd);
@@ -50,3 +51,22 @@ body,html{
   color: #535353;
 }
 
+.hci-content-band{
+  position: absolute;
+  left: 45px;
+  top: 0;
+  width: 24px;
+  height: 70px;
+  .bgImage("../img/green_band");
+}
+
+.hci-sidebar-item [class^="icon-"],
+.hci-sidebar-item [class*=" icon-"]{
+  display: inline-block;
+  width: 37px;
+  line-height: 30px;
+  vertical-align: top;
+  text-align: center;
+  margin-right: 18px;
+  font-size: 26px;
+}

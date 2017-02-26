@@ -2,6 +2,7 @@
 @import "header";
 @import "footer";
 @import "sidebar";
+@import "icon";
 
 body,html{
   font-family: @fontStack;
@@ -23,6 +24,7 @@ body,html{
 }
 
 .hci-content{
+  position: relative;
   margin-bottom: 30px;
   .boxShadow(0 0 9px 0 rgba(0,0,0,0.10),1px solid #ddd);
 }
@@ -34,6 +36,15 @@ body,html{
 .hci-content-header{
   margin: 0 97px 0 96px;
   padding: 36px 0 15px;
+}
+
+.hci-content-band{
+  position: absolute;
+  left: 45px;
+  top: 0;
+  width: 24px;
+  height: 70px;
+  .bgImage("../img/green_band");
 }
 
 .hci-teacher{
@@ -312,4 +323,28 @@ body,html{
   width: 165px;
   line-height: 20px;
   font-size: 13px;
+}
+
+.hci-team-icon{
+  position: absolute;
+  top: 194px;
+  right: 106px;
+  width: 71px;
+  height: 56px;
+  .bgImage("../img/conversation");
+}
+
+.hci-sidebar-item [class^="icon-"],
+.hci-sidebar-item [class*=" icon-"]{
+  display: inline-block;
+  width: 37px;
+  line-height: 30px;
+  vertical-align: top;
+  text-align: center;
+  margin-right: 18px;
+  font-size: 26px;
+}
+
+.hci-sidebar-item .icon-teacher{
+  font-size: 18px;
 }

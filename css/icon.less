@@ -1,0 +1,83 @@
+@import "variables";
+
+@font-face {
+  font-family: 'hci-icon';
+  src:  url('@{icomoon-font-path}/hci-icon.eot?5hmc44');
+  src:  url('@{icomoon-font-path}/hci-icon.eot?5hmc44#iefix') format('embedded-opentype'),
+  url('@{icomoon-font-path}/hci-icon.ttf?5hmc44') format('truetype'),
+  url('@{icomoon-font-path}/hci-icon.woff?5hmc44') format('woff'),
+  url('@{icomoon-font-path}/hci-icon.svg?5hmc44#hci-icon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'hci-icon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-meeting {
+  &:before {
+    content: @icon-meeting;
+  }
+}
+.icon-paper {
+  &:before {
+    content: @icon-paper;
+  }
+}
+.icon-praise {
+  &:before {
+    content: @icon-praise;
+  }
+}
+.icon-project {
+  &:before {
+    content: @icon-project;
+  }
+}
+.icon-publication {
+  &:before {
+    content: @icon-publication;
+  }
+}
+.icon-research {
+  &:before {
+    content: @icon-research;
+  }
+}
+.icon-student {
+  &:before {
+    content: @icon-student;
+  }
+}
+.icon-system {
+  &:before {
+    content: @icon-system;
+  }
+}
+.icon-teacher {
+  &:before {
+    content: @icon-teacher;
+  }
+}
+.icon-team {
+  &:before {
+    content: @icon-team;
+  }
+}
+.icon-search {
+  &:before {
+    content: @icon-search;
+  }
+}
