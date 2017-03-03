@@ -87,10 +87,8 @@ define(['./common.js'],function (common) {
 
 
         this.selections = document.querySelectorAll('.indicator-item');
-        console.log(document.querySelectorAll('.indicator-item'));
         for(var i=0;i<this.selections.length;i++){
             common.addEvent(this.selections[i],'click',function (event) {
-                console.log("click");
                 event = event ? event : window.event;
                 var target = event.srcElement ? event.srcElement : event.target;
                 that.select(target);
@@ -134,7 +132,6 @@ define(['./common.js'],function (common) {
                 _move(this,this.offsetY,this.selections,this.currentIndex);
             }
         }
-        console.log(cssText);
 
         /**
          * 轮播图运动
@@ -184,8 +181,6 @@ define(['./common.js'],function (common) {
      * @param target 点击的指示点对象
      */
     Carousel.prototype.select = function (target) {
-        console.log("click");
-
         var vendors = {
             "webkit": "-webkit-transform",
             "ms": "-ms-transform",

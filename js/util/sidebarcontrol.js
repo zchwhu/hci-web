@@ -7,7 +7,6 @@ define(['js/util/common.js'], function (common) {
     var windowWidth = document.body.clientWidth;
 
     var init = function (ele, mainWidth) {
-        console.log(windowWidth);
         ele.style.left = (windowWidth >= 1140 ? (windowWidth - mainWidth) / 2 : 0) + 'px';
         ele.style.opacity = 1;
     }
