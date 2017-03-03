@@ -96,7 +96,7 @@ define(function () {
      */
     var index = function(self,obj){
         for(var i=0;i < obj.length;i++){
-            if(obj[i]==self){
+            if(obj[i]===self){
                 return i;
             }
         }
