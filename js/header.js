@@ -10,7 +10,7 @@ require(["js/util/common.js","js/util/datecontrol.js","js/util/searchcontrol.js"
     common.addEvent(searchController,'click',searchcontrol.searchcontrol);
 
     window.onscroll = function () {
-        if(common.getScrollTop()>0){
+        if(common.getScrollTop()>367){
             common.addClass(nav,'scroll');
         }else{
             common.removeClass(nav,'scroll');
