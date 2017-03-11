@@ -1,0 +1,79 @@
+@import "header";
+@import "footer";
+@import "article";
+
+body,html{
+  font-family: @fontStack;
+  background-color: @bgColor;
+}
+
+.hci-nav-bg{
+  position: relative;
+  width: 100%;
+  height: 365px;
+  margin-bottom: 25px;
+  overflow: hidden;
+  color: #fff;
+  text-align: center;
+  img{
+    display: block;
+    width: 100%;
+    height: 790px;
+  }
+  h1{
+    position: absolute;
+    top: 147px;
+    left: 0;
+    width: 100%;
+    line-height: 90px;
+    font-size: 64px;
+    span{
+      letter-spacing: 92.01px;
+    }
+  }
+  h2{
+    position: absolute;
+    top: 251px;
+    left: 0;
+    width: 100%;
+    line-height: 33px;
+    font-size: 24px;
+    span{
+      letter-spacing: 21.88px;
+    }
+  }
+}
+
+.hci-overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 790px;
+  background: #EB7681;
+  background: linear-gradient(240deg, #EB7681 0%, #DC788B 54%, #957DBA 97%, #947DBB 97%);
+  border: 2px solid #88959D;
+}
+
+.hci-art-title{
+  margin-bottom: 79px;
+}
+
+.hci-sche-time,
+.hci-sche-pos,
+.hci-sche-cont-title{
+  margin-bottom: 30px;
+  line-height: 28px;
+  font-size: 18px;
+  font-weight: bolder;
+  color: #000;
+}
+
+.hci-sche-content{
+  line-height: 28px;
+  font-size: 18px;
+  color: #000000;
+  p{
+    margin-bottom: 30px;
+  }
+}
