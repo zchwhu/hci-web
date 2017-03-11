@@ -2,11 +2,11 @@
 
 @font-face {
   font-family: 'hci-icon';
-  src:  url('@{icomoon-font-path}/hci-icon.eot?5hmc44');
-  src:  url('@{icomoon-font-path}/hci-icon.eot?5hmc44#iefix') format('embedded-opentype'),
-  url('@{icomoon-font-path}/hci-icon.ttf?5hmc44') format('truetype'),
-  url('@{icomoon-font-path}/hci-icon.woff?5hmc44') format('woff'),
-  url('@{icomoon-font-path}/hci-icon.svg?5hmc44#hci-icon') format('svg');
+  src:  url('@{icomoon-font-path}/hci-icon.eot?270hoy');
+  src:  url('@{icomoon-font-path}/hci-icon.eot?270hoy#iefix') format('embedded-opentype'),
+  url('@{icomoon-font-path}/hci-icon.ttf?270hoy') format('truetype'),
+  url('@{icomoon-font-path}/hci-icon.woff?270hoy') format('woff'),
+  url('@{icomoon-font-path}/hci-icon.svg?270hoy#hci-icon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -26,6 +26,11 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-email {
+  &:before {
+    content: @icon-email;
+  }
+}
 .icon-meeting {
   &:before {
     content: @icon-meeting;
