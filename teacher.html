@@ -2,11 +2,289 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>在读学生</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>教师详情——武汉大学人机交互团队</title>
+    <script type="text/javascript">
+        document.createElement("leo");
+        document.createElement("header");
+        document.createElement("article");
+        document.createElement("aside");
+        document.createElement("section");
+        document.createElement("footer");
+    </script>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link href="css/reset.css" type="text/css" rel="stylesheet">
+    <link href="css/teacher.css" type="text/css" rel="stylesheet">
 </head>
 <body>
-    <div class="text">
+    <nav class="hci-nav hasbg" id="hciNav">
+        <div class="hci-nav-inner">
+            <div class="hci-nav-logo">
+                <img src="img/HCI%20Logo.png">
+            </div>
+            <ul class="hci-nav-list">
+                <li class="hci-nav-item">
+                    <a href="#">团队介绍</a>
+                </li>
+                <li class="hci-nav-item">
+                    <a href="#">研究成果</a>
+                </li>
+                <li class="hci-nav-item">
+                    <a href="#">研究进展</a>
+                </li>
+                <li class="hci-nav-item">
+                    <a href="#">学术活动</a>
+                </li>
+            </ul>
+            <div class="hci-nav-date">
+                <a id="hciDateBtn">重要日期</a>
+                <div class="hci-date-list" id="hciDateList">
+                    <div class="hic-date-inner">
+                        <ul>
+                            <li class="hci-date-item">
+                                <div class="hci-date-calendar">
+                                    <div class="day">20</div>
+                                    <div class="month">2月</div>
+                                </div>
+                                <div class="hci-date-detail">
+                                    <h1 class="hci-date-title">
+                                        <span class="schedule">下一次例会</span>
+                                        <span class="duration">15:00 - 17:00</span>
+                                    </h1>
+                                    <div class="hci-date-info">
+                                        <p>2017年2月20日 星期一</p>
+                                        <p>武汉大学信息管理学院601室</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="hci-date-item">
+                                <div class="hci-date-calendar">
+                                    <div class="day">22</div>
+                                    <div class="month">3月</div>
+                                </div>
+                                <div class="hci-date-detail">
+                                    <h1 class="hci-date-title">
+                                        <span class="schedule">iConference</span>
+                                        <span class="duration">4天</span>
+                                    </h1>
+                                    <h3 class="hci-date-subtitle">iConference 2017</h3>
+                                    <div class="hci-date-info">
+                                        <p>2017年3月22日 - 25日</p>
+                                        <p>中国 武汉</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="hci-date-item">
+                                <div class="hci-date-calendar">
+                                    <div class="day">19</div>
+                                    <div class="month">6月</div>
+                                </div>
+                                <div class="hci-date-detail">
+                                    <h1 class="hci-date-title">
+                                        <span class="schedule">JCDL</span>
+                                        <span class="duration">5天</span>
+                                    </h1>
+                                    <h3 class="hci-date-subtitle">Joint Conference on Digital Libraries</h3>
+                                    <div class="hci-date-info">
+                                        <p>2017年6月19日 - 23日</p>
+                                        <p>加拿大 多伦多</p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <a href="#" class="hci-date-more">更多日程</a>
+                    </div>
+                </div>
+            </div>
+            <div class="hci-nav-search" id="hciSearch">
+                <form>
+                    <input type="text" name="query" placeholder="请输入搜索内容">
+                    <button type="button" title="搜索" id="hciSearchBtn"><i class="icon-search"></i></button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <section class="hci-nav-bg">
+        <img src="img/bg1.jpg">
+    </section>
+    <section class="hci-body">
+        <section class="hci-main hci-content">
+            <div class="hci-mem-avatar">
+                <img src="img/wd.jpg">
+            </div>
+            <h1 class="hci-mem-name"><span>吴</span>丹</h1>
+            <p class="hci-mem-info">博士，教授，博士生导师，图书馆系副系主任</p>
+            <p class="hci-mem-email"><i class="icon-email"></i>woodan@whu.edu.cn</p>
+            <div class="hci-mem-intro">
+                吴丹，女，博士，教授，博士生导师，现任图书馆学系副系主任。毕业于北京大学，获得情报学专业博士学位。美国匹兹堡大学信息科学学院访问学者。入选国家首批“万人计划青年拔尖人才”，以及武汉大学“珞珈特聘教授”和“珞珈青年学者”。在国内外期刊和会议上共发表专业学术论文130余篇，出版专著7部，主持国家级、省部级等各类科研项目20余项。在美国、德国、加拿大、新加坡等国举办的国际会议如SIGIR、CIKM、iConference、CSCW、JCDL等上多次受邀发表主题演讲，是多个国际期刊和会议的编委和同行评议专家。
+            </div>
+        </section>
+        <section class="hci-content hci-module">
+            <h2 class="hci-cont-title">社会兼职</h2>
+            <p>担任国际学术期刊The Electronic Library (SSCI)编委、Journal of Convergence Information Technology (EI)编委、Journal of Data and Information Science编委。担任《中国大百科全书》第三版图书馆学学科信息检索分支副主编、中文核心期刊《图书情报知识》编辑。担任中国图书馆学会“图书馆学教育委员会”副秘书长、“用户研究与服务委员会”委员、“教育评鉴委员会”委员、美国计算机学会ACM会员、美国图书情报学会ASIS&T会员。担任以下期刊同行评议专家：The Electronic Library (SSCI)、Journal of Computer Information System (SCI, A&HCI)、Aslib Journal of Information Management (SCI,SSCI)、Information Technology & People (SSCI)、Artificial Intelligence Review (SCI)、《情报学报》、《图书情报工作》、《现代图书情报技术》、《图书馆论坛》。曾担任iConference 2010信息检索分会场主席、COINFO 2015大数据与情报工程分会场主席。</p>
+        </section>
+        <section class="hci-content hci-module">
+            <h2 class="hci-cont-title">研究领域</h2>
+            <p>信息检索技术、用户信息行为、人机交互、多语言信息处理、信息组织</p>
+        </section>
+        <section class="hci-content hci-module">
+            <h2 class="hci-cont-title">开设课程</h2>
+            <ul>
+                <li>本科生：信息描述、信息系统、信息检索</li>
+                <li>硕士生：信息描述、信息检索</li>
+                <li>博士生：人机交互</li>
+            </ul>
+        </section>
+        <section class="hci-content hci-module">
+            <h2 class="hci-cont-title">研究成果：专著</h2>
+            <ul>
+                <li>[1] 吴丹著. 老年人网络健康信息查询行为研究. 武汉：武汉大学出版社，2016</li>
+                <li>[2] 吴丹编著. 信息描述实验教程. 武汉：武汉大学出版社，2016.1</li>
+                <li>[3] 吴丹著. 协同信息检索行为研究. 北京：国家图书馆出版社，2015.9</li>
+                <li>[4] 吴丹著. 多语言网络学术信息挖掘与检索. 北京：科学出版社，2014.10</li>
+                <li>[5] 吴丹著. 跨语言信息检索：翻译优化理论与技术. 北京：科学技术文献出版社，2011.9</li>
+            </ul>
+        </section>
+        <section class="hci-content hci-module">
+            <h2 class="hci-cont-title">研究成果：期刊论文</h2>
+            <ul>
+                <li>[1] Dan Wu, Wanyu Dang, Daqing He, Renmin Bi. Undergraduate Information Behaviors in Thesis Writing: A Study Using ISP Model. Journal of Librarianship and Information Science, 2016 (SSCI, accepted)</li>
+                <li>[2] Dan Wu, Jinsong Shi. The Classical Music Recording Ontology Used in Library Catalog. Knowledge Organization, 2016, Vol.43, No.6 (SSCI)</li>
+                <li>[3] Dan Wu, Yizhe Li. Online Health Information Seeking Behaviors Among Chinese Elderly. Library & Information Science Research, 2016, Vol.38, No.3 (SSCI)</li>
+                <li>[4] Dan Wu, Rui Qiao, Yi Li. A Study on Location-based Mobile Map Search Behavior. Program: Electronic Library and Information Systems, 2016, Vol.50, No.3, pp.246-269 (SCI, SSCI)</li>
+                <li>[5] Dan Wu, Weiping Cai. An Empirical Study on Adolescents' Web Search Behavior. Journal of Documentation, 2016, Vol.72, No.3, pp.435-453 (SSCI)</li>
+                <li>[6] Dan Wu, Xiaomei Xu, Wenting Yu. Comparing Collaborative Annotations on Books between Libraries and Social Community Sites: A Case Study. The Electronic Library, 2016, Vol.34, No.2, pp.178-195 (SSCI)</li>
+                <li>[7] Dan Wu, Daqing He, Jin Qiu, Ruonan Lin, Yang Liu. Comparing Social Tags with Subject Headings on Annotating Books: A Study Comparing the Information Science Domain in English and Chinese. Journal of Information Science, 2013, Vol.39, No.2, pp.169-187 (SCI, SSCI)</li>
+                <li>[8] Dan Wu, Daqing He, Jiepu Jiang, Wuyi Dong, Kim Thien Vo. The State of iSchools: An Analysis of Academic Research and Graduate Education. Journal of Information Science, 2012, Vol.38, No.1, pp.15-36 (SCI, SSCI)</li>
+            </ul>
+        </section>
+        <section class="hci-content hci-module">
+            <h2 class="hci-cont-title">研究成果：重要会议论文</h2>
+            <ul>
+                <li>[1] Dan Wu, Wanyu Dang, Daqing He, Renmin Bi. Undergraduate Information Behaviors in Thesis Writing: A Study Using ISP Model. Journal of Librarianship and Information Science, 2016 (SSCI, accepted)</li>
+                <li>[2] Dan Wu, Jinsong Shi. The Classical Music Recording Ontology Used in Library Catalog. Knowledge Organization, 2016, Vol.43, No.6 (SSCI)</li>
+                <li>[3] Dan Wu, Yizhe Li. Online Health Information Seeking Behaviors Among Chinese Elderly. Library & Information Science Research, 2016, Vol.38, No.3 (SSCI)</li>
+                <li>[4] Dan Wu, Rui Qiao, Yi Li. A Study on Location-based Mobile Map Search Behavior. Program: Electronic Library and Information Systems, 2016, Vol.50, No.3, pp.246-269 (SCI, SSCI)</li>
+                <li>[5] Dan Wu, Weiping Cai. An Empirical Study on Adolescents' Web Search Behavior. Journal of Documentation, 2016, Vol.72, No.3, pp.435-453 (SSCI)</li>
+                <li>[6] Dan Wu, Xiaomei Xu, Wenting Yu. Comparing Collaborative Annotations on Books between Libraries and Social Community Sites: A Case Study. The Electronic Library, 2016, Vol.34, No.2, pp.178-195 (SSCI)</li>
+                <li>[7] Dan Wu, Daqing He, Jin Qiu, Ruonan Lin, Yang Liu. Comparing Social Tags with Subject Headings on Annotating Books: A Study Comparing the Information Science Domain in English and Chinese. Journal of Information Science, 2013, Vol.39, No.2, pp.169-187 (SCI, SSCI)</li>
+                <li>[8] Dan Wu, Daqing He, Jiepu Jiang, Wuyi Dong, Kim Thien Vo. The State of iSchools: An Analysis of Academic Research and Graduate Education. Journal of Information Science, 2012, Vol.38, No.1, pp.15-36 (SCI, SSCI)</li>
+            </ul>
+        </section>
+        <section class="hci-content hci-module">
+            <h2 class="hci-cont-title">主要国家级、省部级科研项目</h2>
+            <ul>
+                <li>[1] (主持) 2016年度国家自然科学基金面上项目“多设备融合的用户网络搜索行为建模与技术实现研究”(在研)</li>
+                <li>[2] (主持)2016年度教育部人文社会科学研究规划基金项目“面向移动互联网的图书馆用户行为大数据分析与服务创新研究”(在研)</li>
+                <li>[3] (主持)2015年度武汉市国际科技合作计划项目“移动用户复杂信息搜索策略分析与行为建模研究”(在研)</li>
+                <li>[4] (主持)2013年度国家万人计划青年拔尖人才项目“大数据环境下学术交流中的用户信息行为研究”(在研)</li>
+                <li>[5] (主持)2015年度湖北省出版基金项目(已结项)</li>
+            </ul>
+        </section>
+    </section>
+    <aside class="hci-sidebar" id="hciSidebar">
+        <div class="hci-sidebar-header">
+            <div class="hci-sidebar-logo">HCI</div>
+            <h1 class="hci-sidebar-title"><span>团队介</span>绍</h1>
+            <p>武汉大学人机交互创新团队</p>
+        </div>
+        <ul class="hci-sidebar-menu">
+            <li class="hci-sidebar-item">
+                <i class="icon-research"></i>
+                <a>研究领域</a>
+            </li>
+            <li class="hci-sidebar-item">
+                <i class="icon-teacher"></i>
+                <a>师资力量</a>
+            </li>
+            <li class="hci-sidebar-item active">
+                <i class="icon-student"></i>
+                <a>在读学生</a>
+            </li>
+            <li class="hci-sidebar-item">
+                <i class="icon-team"></i>
+                <a>团队风采</a>
+            </li>
+        </ul>
+    </aside>
+    <aside class="hci-sidebar hci-sidebar-nav" id="hciSidebarNav">
+        <h1>快速跳转</h1>
+        <h2>当前页面中</h2>
+        <ul class="hci-sidebar-nav-list">
 
-    </div>
+        </ul>
+    </aside>
+    <footer>
+        <div class="hci-footer-inner">
+            <div class="hci-footer-area hci-footer-info">
+                <div class="hci-footer-info-logo">
+                    <img src="img/White%20Logo.png">
+                </div>
+                <div class="hci-footer-info-name">
+                    <p>武汉大学人机交互创新团队</p>
+                    <p>Human Computer Interaction Innovation Team Wuhan University</p>
+                </div>
+                <div class="hci-footer-info-design">
+                    Website Designed by
+                    <a href="#">Huiqin Gao</a>
+                </div>
+            </div>
+            <div class="hci-footer-area hci-footer-nav">
+                <ul>
+                    <li>
+                        <a href="#">团队介绍</a>
+                    </li>
+                    <li>
+                        <a href="#">研究成果</a>
+                    </li>
+                    <li>
+                        <a href="#">研究进展</a>
+                    </li>
+                    <li>
+                        <a href="#">学术活动</a>
+                    </li>
+                    <li>
+                        <a href="#">重要日期</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="hci-footer-area hci-footer-link">
+                <ul>
+                    <li>
+                        <a href="#">这里是一个友情链接</a>
+                    </li>
+                    <li>
+                        <a href="#">这里是一个友情链接</a>
+                    </li>
+                    <li>
+                        <a href="#">这里是一个友情链接</a>
+                    </li>
+                    <li>
+                        <a href="#">这里是一个友情链接</a>
+                    </li>
+                    <li>
+                        <a href="#">这里是一个友情链接</a>
+                    </li>
+                    <li>
+                        <a href="#">这里是一个友情链接</a>
+                    </li>
+                    <li>
+                        <a href="#">这里是一个友情链接</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="hci-footer-area hci-footer-contact">
+                <dl>
+                    <dt>联系方式</dt>
+                    <dd>地址：湖北省武汉市武昌区珞珈山</dd>
+                    <dd>武汉大学信息管理学院601室</dd>
+                    <dd>电话：027-68756117</dd>
+                    <dd>Email：woodan@whu.edu.cn</dd>
+                </dl>
+            </div>
+        </div>
+    </footer>
+    <div class="mask"></div>
+    <script src="js/lib/require.js" data-main="js/teacher.js"></script>
 </body>
 </html>

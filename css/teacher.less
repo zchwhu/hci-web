@@ -1,0 +1,161 @@
+@import "header";
+@import "footer";
+@import "sidebar";
+
+body,html{
+  font-family: @fontStack;
+  background-color: @bgColor;
+}
+
+.hci-nav-bg{
+  width: 100%;
+  height: 381px;
+  z-index: -10;
+  img{
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.hci-body {
+  position: relative;
+  top: -158px;
+  width: @mainWidth;
+  margin: 0 auto;
+  padding-left: @sidebarWidth;
+  box-sizing: border-box;
+}
+
+.hci-content{
+  padding: 33px 97px;
+  margin-left: 30px;
+  margin-bottom: 15px;
+  line-height: 26px;
+  text-align: justify;
+  color: #535353;
+  font-size: 14px;
+  background-color: #fff;
+  .boxShadow(0 0 9px 0 rgba(0,0,0,0.10),1px solid #ddd);
+  &.hci-main{
+    padding-top: 88px;
+  }
+}
+
+.hci-mem-avatar{
+  position: absolute;
+  top: -88px;
+  right: 340px;
+  width: 165px;
+  height: 165px;
+  img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    .boxSizing(content-box);
+    .borderRadius(50%);
+    border: 6px solid #fff;
+    .boxShadow(0 0 9px 0 rgba(0,0,0,0.10));
+  }
+}
+
+.hci-mem-name{
+  margin-top: 15px;
+  line-height: 45px;
+  text-align: center;
+  font-size: 32px;
+  color: #555;
+  span{
+    letter-spacing: 10.2px;
+  }
+}
+
+.hci-mem-info{
+  margin-top: 6px;
+  line-height: 22px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: bolder;
+  color: #555;
+}
+
+.hci-mem-email{
+  margin-top: 6px;
+  margin-bottom: 30px;
+  line-height: 20px;
+  text-align: center;
+  .icon-email{
+    margin-right: 6px;
+    font-size: 12px;
+  }
+}
+
+.hci-cont-title{
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #000;
+}
+
+.hci-sidebar{
+  top: 223px;
+}
+
+.hci-sidebar-nav{
+  top: 664px;
+  visibility: hidden;
+  padding-top: 37px;
+  padding-bottom: 65px;
+  opacity: 0;
+  text-align: center;
+  .transition(opacity 0.4s);
+  &.show{
+    position: fixed;
+    top: 110px;
+    visibility: visible;
+    opacity: 1;
+  }
+  h1,
+  h2{
+    line-height: 34px;
+    color: #010101;
+  }
+  h1{
+    line-height: 68px;
+    font-size: 32px;
+  }
+  h2{
+    font-size: 16px;
+  }
+}
+
+.hci-sidebar-nav-list{
+  margin-top: 30px;
+}
+
+.hci-sidebar-nav-item{
+  line-height: 34px;
+  font-size: 18px;
+  color: #000;
+  text-decoration: underline;
+  &.active,
+  &:hover{
+    color: #009896;
+  }
+  a{
+    cursor: pointer;
+  }
+}
+
+.hci-sidebar-item [class^="icon-"],
+.hci-sidebar-item [class*=" icon-"]{
+  display: inline-block;
+  width: 37px;
+  line-height: 30px;
+  vertical-align: top;
+  text-align: center;
+  margin-right: 18px;
+  font-size: 26px;
+}
+
+.hci-sidebar-item .icon-teacher{
+  font-size: 18px;
+}
