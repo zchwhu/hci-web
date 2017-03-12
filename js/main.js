@@ -22,7 +22,6 @@ require(["js/util/common.js","js/util/datecontrol.js","js/util/searchcontrol.js"
             height = item.offsetTop;
             heightList.push(height)
         }
-        console.log(heightList);
     };
     _caculateHeight();
 
@@ -35,7 +34,6 @@ require(["js/util/common.js","js/util/datecontrol.js","js/util/searchcontrol.js"
             document.documentElement.scrollTop = height;
             document.body.scrollTop = height;
             window.pageYOffset = height;
-            console.log(document.body.scrollTop);
         })
     }
 
