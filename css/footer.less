@@ -22,9 +22,9 @@ footer{
 }
 
 .hci-footer-info{
-  width: 321px;
+  width: 251px;
   box-sizing: border-box;
-  padding-left: 21px;
+  //padding-left: 21px;
   line-height: 20px;
   font-size: 14px;
 }
@@ -50,7 +50,7 @@ footer{
 
 .hci-footer-nav{
   height: 192px;
-  padding: 0 69px;
+  padding: 0 49px;
   font-size: 12px;
   li{
     margin-bottom: 30px;
@@ -67,19 +67,27 @@ footer{
 
 .hci-footer-link{
   height: 192px;
-  padding: 0 54px;
+  padding: 0 34px;
   ul{
-    width: 168px;
+    width: 390px;
     font-size: 12px;
     li{
+      .displayInlineBlock();
+      width: 168px;
+      margin-right: 25px;
       margin-bottom: 15px;
       line-height: 14px;
+
       &:last-child{
         margin-bottom: 0;
       }
       a{
         display: block;
         color: inherit;
+        text-align: center;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
       }
     }
   }
@@ -88,12 +96,12 @@ footer{
 .hci-footer-contact{
   font-size: 14px;
   dt{
-    margin-left: 71px;
+    margin-left: 45px;
     margin-bottom: 14px;
     line-height: 22px;
   }
   dd{
-    margin-left: 99px;
+    margin-left: 73px;
     line-height: 32px;
   }
 }
