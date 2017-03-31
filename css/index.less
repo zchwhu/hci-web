@@ -8,97 +8,75 @@ body,html{
   background-color: @bgColor;
 }
 
-.hci-banner{
+.hci-news{
   width: 100%;
-  height: 558px;
-  position: relative;
-  overflow: hidden;
-  margin: 0;
-  padding: 0;
+  height: @hciNewsHeight;
+  margin-top: @navHeight;
 }
 
-.hci-banner-list{
-  position: absolute;
-  height: 100%;
-  left: 0;
-  top: 0;
-  overflow: hidden;
-  .transition(all 0.6s);
-  .transform(translate(0,0));
-  margin: 0;
-  padding: 0;
-}
-
-.hci-banner-item{
-  position: relative;
+.hci-news-jumbotron{
   float: left;
+  width: 70%;
   height: 100%;
   img{
-    display: block;
     width: 100%;
     height: 100%;
   }
 }
 
-.hci-banner-desc{
-  position: absolute;
-  left: 131px;
-  bottom: 41px;
-  min-width: 652px;
-  height: 80px;
-  padding-left: 16px;
+.hci-news-aside{
+  float: left;
+  width: 30%;
+  height: 100%;
+}
+
+.hci-news-list{
+  width: 100%;
+  height: 100%;
+}
+
+.hci-news-item{
+  position: relative;
+  width: 100%;
+  height: @hciNewsHeight/3;
+  overflow: hidden;
   .boxSizing();
-  line-height: 80px;
-  font-family: PingFangSC-Medium;
-  font-size: 36px;
-  color: @mainColor;
-  background: #fff;
-  background: rgba(255,255,255,0.65);
-}
-
-.prev,.next{
-  display: block;
-  position: absolute;
-  top: 287px;
-  width: 66px;
-  height: 66px;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 100%;
-  text-indent: -9999px;
-}
-
-.prev{
-  left: 133px;
-  .bgImage("../img/Arrow Left");
-}
-
-.next{
-  right: 133px;
-  .bgImage("../img/Arrow Right");
-}
-
-.indicators{
-  position: absolute;
-  left: 50%;
-  bottom: 18px;
-  width: 60%;
-  margin-left: -30%;
-  text-align: center;
-}
-
-.indicator-item{
-  .displayInlineBlock();
-  width: 12px;
-  height: 12px;
-  margin: 1px;
-  opacity: 0.85;
-  border: 1px solid #FFFFFF;
-  .borderRadius(50%);
-  cursor: pointer;
-  &.active{
-    background-color: #fff;
+  border: 1px solid #fff;
+  opacity: 0.6;
+  .transition(opacity .2s);
+  &:hover{
+    opacity: 1;
+    .hci-news-title{
+      bottom: 0;
+    }
   }
+  &+.hci-news-item{
+    border-bottom: none;
+  }
+  img{
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.hci-news-title{
+  position: absolute;
+  left: 0;
+  bottom: -50px;
+  width: 100%;
+  height: 50px;
+  .boxSizing();
+  padding: 0 15px;
+  line-height: 50px;
+
+  font-size: 15px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: #fff;
+  background-color: rgba(0,0,0,.6);
+
+  .transition(bottom .4s ease-in-out .2s);
 }
 
 .hci-part{
